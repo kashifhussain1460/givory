@@ -23,7 +23,7 @@ export default function Section4({ categoryList }: Props) {
 
   return (
     <div>
-      <H1 mb={2}>Top Categories</H1>
+      {/* <H1 mb={2}>Top Categories</H1> */}
 
       <Carousel slidesToShow={6} responsive={responsive} arrowStyles={CAROUSEL_ARROW_STYLE}>
         {categoryList.map((item, ind) => (

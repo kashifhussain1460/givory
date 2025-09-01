@@ -15,7 +15,7 @@ export default async function Section3() {
   ];
 
   return (
-    <SectionCreator title="New Arrivals" seeMoreLink="#">
+    <SectionCreator title="" seeMoreLink="#">
       <Carousel
         slidesToShow={6}
         responsive={responsive}

@@ -19,7 +19,7 @@ export default function Section1({ carouselData }: Props) {
   const { direction } = useTheme();
 
   return (
-    <StyledRoot className="mb-3">
+    <StyledRoot className="mb-3 mt-1">
       <Carousel
         dots
         // autoplay

@@ -23,27 +23,6 @@ export const catgoryNavigation = [
   {
     category: "Top Categories",
     categoryItem: [
-      { icon: "Home", title: "Home", href: "/products/search/Dariry & Eggs" },
-      {
-        icon: "Popular",
-        title: "Popular Products",
-        href: "/products/search/Breakfast",
-      },
-      {
-        icon: "Trending",
-        title: "Trending Products",
-        href: "/products/search/Frozen",
-      },
-      {
-        icon: "Products",
-        title: "All Products",
-        href: "/products/search/vegetables",
-      },
-    ],
-  },
-  {
-    category: "Top Categories",
-    categoryItem: [
       {
         icon: "BirthdayCake",
         title: "Birthday",

@@ -1,12 +1,14 @@
+"use client";
 import Box from "@mui/material/Box";
+
 // GLOBAL CUSTOM COMPONENTS
 import { Carousel } from "components/carousel";
 import { SectionHeader } from "components/section-header";
-import { ProductCard4 } from "components/product-cards/product-card-4";
 // CUSTOM DATA MODEL
 import Product from "models/Product.model";
 // STYLED COMPONENT
 import { SubTitle } from "../styles";
+import ProductCard10 from "components/product-cards/product-card-3/product-card";
 
 // =================================================================
 type Props = { title: string; products: Product[] };
@@ -20,9 +22,9 @@ export default function ProductCarousel({ products, title }: Props) {
   ];
 
   return (
-    <div className="mb-3">
+    <div className="mb-3 m-1">
       <SectionHeader title={title} seeMoreLink="#" />
-      <SubTitle>Best collection in 2021 for you!</SubTitle>
+      <SubTitle>Surprise Your Loved Ones!</SubTitle>
 
       <Carousel
         responsive={responsive}
@@ -38,15 +40,7 @@ export default function ProductCarousel({ products, title }: Props) {
         }}>
         {products.map((item) => (
           <Box pb={2} key={item.id}>
-            <ProductCard4
-              id={item.id}
-              slug={item.slug}
-              title={item.title}
-              price={item.price}
-              off={item.discount}
-              rating={item.rating}
-              imgUrl={item.thumbnail}
-            />
+            <ProductCard10 {...item} imgUrl={item.thumbnail} off={item.discount} />
           </Box>
         ))}
       </Carousel>

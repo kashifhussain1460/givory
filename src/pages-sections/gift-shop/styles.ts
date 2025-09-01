@@ -4,6 +4,6 @@ export const CAROUSEL_ARROW_STYLE = {
   boxShadow: 2,
   borderRadius: 0,
   color: "primary.main",
-  backgroundColor: "primary.50",
-  "&:hover": { backgroundColor: "primary.100" }
+  backgroundColor: "#ffffff",
+  "&:hover": { backgroundColor: "primary.main", color: "#ffffff" }
 };

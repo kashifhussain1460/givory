@@ -3,7 +3,7 @@
 import Box, { BoxProps } from "@mui/material/Box";
 import styled from "@mui/material/styles/styled";
 import clsx from "clsx";
-
+import { greatVibesFont } from "lib/fonts";
 // ==============================================================
 type Ellipsis = { ellipsis: number };
 interface Props extends BoxProps {
@@ -122,6 +122,7 @@ export function Paragraph(props: Props) {
       fontSize={14}
       component="p"
       fontWeight={400}
+      fontFamily={greatVibesFont}
       ellipsis={ellipsis ? 1 : 0}
       {...(className && { className: clsx({ [className]: true }) })}
       {...others}>
@@ -138,6 +139,7 @@ export function Small(props: Props) {
       fontSize={12}
       fontWeight={400}
       component="small"
+      fontFamily={greatVibesFont}
       ellipsis={ellipsis ? 1 : 0}
       {...(className && { className: clsx({ [className]: true }) })}
       {...others}>
@@ -152,6 +154,7 @@ export function Span(props: Props) {
   return (
     <StyledBox
       component="span"
+      fontFamily={greatVibesFont}
       ellipsis={ellipsis ? 1 : 0}
       {...(className && { className: clsx({ [className]: true }) })}
       {...others}>
@@ -168,6 +171,7 @@ export function Tiny(props: Props) {
       component="small"
       fontSize={10}
       fontWeight={400}
+      fontFamily={greatVibesFont}
       ellipsis={ellipsis ? 1 : 0}
       {...(className && { className: clsx({ [className]: true }) })}
       {...others}>
